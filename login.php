@@ -1,5 +1,10 @@
+<?php 
+    session_start();
+    if(isset($_SESSION['unique_id'])){ //if user is logged in already
+        header("location: ../users.php");
+    }
+?>
 <?php include_once "header.php"; ?>
-
     <body>
        <div class="wrapper">
         <section class="form login">

@@ -4,7 +4,6 @@
         header("location: ../login.php");
     }
 ?>
-
 <?php include_once "header.php"; ?>
     <body>
        <div class="wrapper">
@@ -24,7 +23,7 @@
                         <p><?php echo $row['status'] ?></p>
                     </div>
                 </div> 
-                <a href="#" class="logout">Logout</a> 
+                <a href="php/logout.php?logout_id=<?php echo $row['unique_id'] ?>" class="logout">Logout</a> 
             </header>
             <div class="search">
                 <span class="text">Select a user to start chat</span>
